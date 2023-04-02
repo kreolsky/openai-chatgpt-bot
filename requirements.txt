@@ -1,0 +1,6 @@
+aiogram
+openai
+python-decouple
+redis
+DateTime
+requests
