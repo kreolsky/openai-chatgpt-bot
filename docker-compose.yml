@@ -9,8 +9,7 @@ services:
       REDIS_URL: ${REDIS_URL}
     depends_on:
       - redis
-    restart:
-      always      
+    restart: always
 
   redis:
     image: "redis:6-alpine"
@@ -18,5 +17,4 @@ services:
     command: ["redis-server", "--appendonly", "yes"]
     volumes:
       - ./db/redis:/data
-    restart:
-      always
+    restart: always
